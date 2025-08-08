@@ -176,6 +176,12 @@ def show_main():
             .stMarkdown {
                 margin-bottom: 2px !important;  /* Riduce spazio tra label e input */
             }
+            div.row-widget.stSelectbox,
+            div.row-widget.stRadio,
+            div.row-widget.stNumberInput {
+                margin-top: -10px !important;
+                margin-bottom: 0px !important;
+            }
         </style>
     """, unsafe_allow_html=True)
 
@@ -723,6 +729,7 @@ elif st.session_state.page == "main":
     show_main()
 elif st.session_state.page == "results":
     show_results()
+
 
 
 

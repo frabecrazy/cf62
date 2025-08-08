@@ -218,7 +218,6 @@ def show_main():
     <div style='margin-bottom:-10px'>
         <strong>Ownership</strong><br/>
         <span style='font-size:12px; color:gray'>Is this device used only by you or shared?</span>
-    </div>
 """, unsafe_allow_html=True)
                 shared = st.selectbox("", ["Personal", "Shared"], index=["Personal", "Shared"].index(prev["shared"]), key=f"{device_id}_shared")
 
@@ -723,5 +722,6 @@ elif st.session_state.page == "main":
     show_main()
 elif st.session_state.page == "results":
     show_results()
+
 
 
